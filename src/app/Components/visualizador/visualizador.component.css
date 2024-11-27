@@ -1,120 +1,85 @@
 h2 {
-    font-family: 'Press Start 2P';
-    /* Fuente tipo pixel */
-    color: #00796b;
-    /* Color del texto */
-    text-align: center;
-    /* Centrar el encabezado */
-  }
-  
-  .details {
-    font-family: 'Press Start 2P';
-    /* Fuente tipo pixel */
-    color: #00796b;
-    /* Color del texto */
-    margin-bottom: 20px;
-    /* Espacio debajo de los detalles */
-    padding: 15px;
-    /* Espaciado interno para la sección de detalles */
-    background-color: #b2ebf2;
-    /* Color de fondo pastel */
-    border: 2px solid #4db6ac;
-    /* Borde suave */
-    border-radius: 0;
-    /* Bordes cuadrados */
-  }
-  
-  .details p {
-    margin: 5px 0;
-    /* Margen entre los párrafos */
-  }
-  
-  .message-container {
-    display: flex;
-    /* Usar flexbox para centrar el contenido */
-    align-items: center;
-    /* Centrar verticalmente */
-    justify-content: center;
-    /* Centrar horizontalmente */
-    height: auto;
-    /* Ajustar la altura automáticamente */
-    margin-top: 0;
-    /* Sin margen superior para estar justo debajo de .details */
-  }
-  
-  .message-box {
-    padding: 20px;
-    /* Espaciado interno */
-    border: 4px solid #00796b;
-    /* Borde del cuadro de mensaje */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    background-color: #ffeb3b;
-    /* Color de fondo del cuadro de mensaje */
-    text-align: center;
-    /* Centrar el texto en el cuadro de mensaje */
-    color: #ffeb3b;
-    /* Color del texto */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
-    transition: all 0.3s ease;
-    /* Transición suave para cambios de tamaño */
-    font-family: 'Press Start 2P';
-    /* Fuente tipo pixel */
-    justify-content: center;
-    align-content: center;
-  }
-  
-  .message-box p {
-    margin: 0;
-    /* Sin margen en el párrafo del mensaje */
-    font-weight: bold;
-    /* Texto en negrita */
-  }
-  
-  /* MODO OSCURO /*
-  /* Estilos para detalles en modo Game Boy */
-  :host-context(.dark-mode) .details {
-    color: #80cbc4;
-    margin-bottom: 20px;
-    /* Espacio debajo de los detalles */
-    padding: 15px;
-    /* Espaciado interno para la sección de detalles */
-    background-color: #47758b;
-    /* Color de fondo pastel */
-    border: 2px solid #154764;
-    /* Bordes cuadrados */
-  }
-  
-  /* Estilos para el texto dentro de detalles */
-  :host-context(.dark-mode) .details p {
-    color: #d3d3d3;
-    /* Color claro para el texto de los párrafos en detalles */
-  }
-  
-  /* Estilos para el cuadro de mensaje en modo Game Boy */
-  :host-context(.dark-mode) .message-box {
-    border: 4px solid #154764;
-    /* Borde claro para el cuadro de mensaje */
-    background-color: #47758b;
-    /* Fondo oscuro para el cuadro de mensaje */
-    color: #d3d3d3;
-    /* Color claro del texto del mensaje */
-    padding: 20px;
-    /* Espaciado interno */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(209, 205, 205, 0.5);
-    /* Sombra para el cuadro de mensaje */
-  }
-  
-  /* Estilo para el texto dentro del cuadro de mensaje */
-  :host-context(.dark-mode) .message-box p {
-    color: #d3d3d3;
-    /* Color claro para el texto en el cuadro de mensaje */
-  }
-  
-  :host-context(.dark-mode) h2 {
-    color: #325a65;
-    /* Color de título claro */
-  }
+  text-align: center; /* Centrar el encabezado */
+  color: black; /* Color del título claro */
+}
+
+/* Estilo general para cada sección */
+.details {
+  font-family: 'Press Start 2P', cursive; /* Fuente tipo pixel */
+  color: white; /* Color del texto */
+  margin-bottom: 20px; /* Espacio debajo de los detalles */
+  padding: 15px; /* Espaciado interno para la sección de detalles */
+  background-color: #faba7e; /* Color de fondo pastel */
+  border: 2px solid black;
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para los párrafos dentro de cada sección */
+.details p {
+  margin: 5px 0; /* Margen entre los párrafos */
+}
+
+/* Estilos para la caja de mensajes */
+.message-container {
+  display: flex; /* Usar flexbox para centrar el contenido */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  height: auto; /* Ajustar la altura automáticamente */
+  margin-top: 20px; /* Espacio superior */
+  color: black;
+}
+
+/* Estilo para el cuadro de mensaje */
+.message-box {
+  padding: 20px; /* Espaciado interno */
+  border: 4px solid black; /* Borde del cuadro de mensaje */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #ffeb3b; /* Color de fondo del cuadro de mensaje */
+  text-align: center; /* Centrar el texto en el cuadro de mensaje */
+  color: black; /* Color del texto */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease; /* Transición suave para cambios de tamaño */
+  font-family: 'Press Start 2P', cursive; /* Fuente tipo pixel */
+  justify-content: center; /* Centrar el contenido */
+  align-content: center;
+}
+
+/* Estilo para el texto dentro del cuadro de mensaje */
+.message-box p {
+  margin: 0; /* Sin margen en el párrafo del mensaje */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos en modo oscuro para .details */
+:host-context(.dark-mode) .details {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #b1bbb8; /* Fondo oscuro */
+  border: 2px solid #4f5251; /* Borde oscuro */
+  border-radius: 5px;
+}
+
+/* Estilos para los párrafos dentro de .details en modo oscuro */
+:host-context(.dark-mode) .details p {
+  color: black; /* Texto claro */
+}
+
+/* Estilos para .message-box en modo oscuro */
+:host-context(.dark-mode) .message-box {
+  border: 4px solid #154764; /* Borde oscuro */
+  background-color: #47758b; /* Fondo oscuro */
+  color: #d3d3d3; /* Texto claro */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(209, 205, 205, 0.5); /* Sombra suave */
+}
+
+/* Estilo para el texto dentro de .message-box en modo oscuro */
+:host-context(.dark-mode) .message-box p {
+  color: #d3d3d3; /* Texto claro */
+}
+
+/* Estilo para los encabezados h2 en modo oscuro */
+:host-context(.dark-mode) h2 {
+  color: white; /* Color blanco para el título en modo oscuro */
+}

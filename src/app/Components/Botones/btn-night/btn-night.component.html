@@ -1,5 +1,4 @@
-<div class="toggle-container" (click)="onClick()">
-    <span class="icon sun">☀️</span>
-    <div class="toggle-bar" [class.active]="isDarkMode"></div>
-    <span class="icon moon">🌙</span>
-</div>
+<div class="toggle-container" (click)="onClick()" [style.backgroundColor]="buttonBackgroundColor">
+    <span>{{ buttonText }}</span> <!-- Mostrar el texto dependiendo del modo -->
+  </div>
+  
