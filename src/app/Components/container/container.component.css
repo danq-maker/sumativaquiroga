@@ -1,0 +1,89 @@
+/* Estilo general para el contenedor */
+.envase {
+    display: flex;
+    /* Usar flexbox para organizar columnas */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: #e0f7fa;
+    /* Color de fondo suave */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+  }
+  
+  
+  /* Estilo para la columna izquierda */
+  .left-column, .right-column {
+    flex: 1;
+    /* Ocupa el 50% del espacio disponible */
+    padding: 15px;
+    /* Espaciado interno */
+    border: 2px solid #4db6ac;
+    /* Borde suave */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    background-color: #f0f4f4;
+    /* Fondo más claro para la columna */
+  }
+  
+  /* Estilo para el grupo de botones */
+  .button-group {
+    margin-bottom: 20px;
+    /* Espacio debajo del grupo de botones */
+  }
+  
+  /* Estilo para cada fila de botones */
+  .button-row {
+    display: flex;
+    /* Usar flexbox para organizar botones en fila */
+    margin-bottom: 10px;
+    /* Espacio entre filas */
+    justify-content: space-between;
+    /* Espacio entre botones */
+  }
+  
+  /* Centrar el contenedor de botones de ancho completo */
+  .full-width-container {
+    width: 99.5%;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
+    display: flex;
+    /* Usar flexbox para alinear el botón */
+    justify-content: center;
+    /* Centrar el contenido horizontalmente */
+    align-items: center;
+    /* Centrar el contenido verticalmente (si es necesario) */
+    margin-left: 1px;
+  }
+  
+  /* Estilo para el encabezado */
+  h2 {
+    font-family: 'Press Start 2P', cursive;
+    /* Fuente tipo pixel */
+    color: #00796b;
+    /* Color del texto */
+    text-align: center;
+    /* Centrar el texto */
+    margin-bottom: 10px;
+    /* Espacio inferior */
+  }
+  
+  /* Estilo para el contenedor principal */
+  .dark-mode .envase {
+    background-color: #1b2d35;
+  }
+  
+  .dark-mode .right-column,
+  .dark-mode .left-column {
+    border: 2px solid #121b21;
+    /* Borde más claro para un contraste suave */
+    background-color: #26414c;
+    /* Color de fondo más oscuro y suave */
+  }
+  
+  .dark-mode h2 {
+    color: #325a65;
+    /* Color de título claro */
+  }
