@@ -90,7 +90,7 @@ export class ContainerComponent {
    */
   onAceptarClick(): void {
     this.visualizadorColor = 'green'; // Cambiar el color del visualizador a verde
-    this.visualizadorMensaje = 'Enviado con éxito'; // Mostrar mensaje en el visualizador
+    this.visualizadorMensaje = 'Fue enviado con exito'; // Mostrar mensaje en el visualizador
   }
 
   /**
@@ -99,7 +99,7 @@ export class ContainerComponent {
    */
   onCancelarClick(): void {
     this.visualizadorColor = 'red'; // Cambiar el color a rojo
-    this.visualizadorMensaje = 'Se ha cancelado el proceso'; // Cambiar el mensaje
+    this.visualizadorMensaje = 'El proceso se a cancelado'; // Cambiar el mensaje
   }
 
   /**
